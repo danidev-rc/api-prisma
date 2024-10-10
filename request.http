@@ -1,0 +1,59 @@
+GET http://localhost:3000/api/products
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name" : "inka cola",
+  "price" : 100,
+  "stock" : 10,
+  "categoryId" : 4
+}
+###
+###
+PATCH http://localhost:3000/api/products/4
+Content-Type: application/json
+  
+{
+  "name" : "coca cola",
+  "price" : 1000,
+  "stock" : 10,
+  "categoryId" : 4
+}
+
+###
+DELETE http://localhost:3000/api/products/5
+###
+GET http://localhost:3000/api/products/4
+
+
+
+--------------------------------------------------------------
+# Categories
+GET http://localhost:3000/api/categories
+###
+POST http://localhost:3000/api/categories
+Content-Type: application/json
+
+{
+  "name" : "galletas"
+}
+
+###
+PATCH http://localhost:3000/api/categories/4
+Content-Type: application/json
+
+{
+  "name" : "bebidas"
+}
+
+###
+DELETE http://localhost:3000/api/categories/5
+Content-Type: application/json
+
+{
+  "name" : "galletas"
+}
+
+###
+GET http://localhost:3000/api/categories/4
