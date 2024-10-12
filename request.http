@@ -49,11 +49,5 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/api/categories/5
-Content-Type: application/json
-
-{
-  "name" : "galletas"
-}
-
 ###
 GET http://localhost:3000/api/categories/4
